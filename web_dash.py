@@ -1,3 +1,4 @@
+# This is used on PythonEverywhere
 import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output
@@ -7,8 +8,7 @@ import plotly.express as px
 # Load the merged DataFrame from the pickle file
 merged_df = pd.read_pickle("/home/Ifena/merged.pkl")
 
-# If the 'region' column isn’t already in your pickled DataFrame,
-# you can create it using your region mapping.
+# Mapping the region
 region_mapping = {
     "Beijing": "East", "Tianjin": "East", "Liaoning": "East", "Shanghai": "East", "Jiangsu": "East",
     "Zhejiang": "East", "Fujian": "East", "Shandong": "East", "Guangdong": "East",
@@ -29,7 +29,7 @@ province_options = [{'label': prov, 'value': prov} for prov in sorted(merged_df[
 
 # Define a color mapping for regions
 region_color_map = {
-    "East": "#4682B4",
+    "East": "#4682B4", # "blue" is too rough
     "Central": "orange",
     "West": "green"
 }
