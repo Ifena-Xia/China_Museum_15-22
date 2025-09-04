@@ -3,10 +3,10 @@
   <title>China Museum Data</title>
   <style>
     body {
-      max-width: 900px;       /* Widen the content area */
-      width: 90%;        /* Adjust the width on phone */
+      max-width: 800px;       /* Widen the content area */
+      width: 95%;        /* Adjust the width on phone */
       margin: 0 auto;       /* Center the page with top-bottom spacing */
-      padding: 20px;         /* Add padding on left and right */
+      padding: 32px 24px;         /* Add padding on left and right */
       font-family: Georgia, serif;
       font-size: 18px;
       line-height: 1.8;        /* Increase line spacing */
@@ -15,8 +15,12 @@
     }
 
     iframe {
-      max-width: 100%;
+      width: 100%;
+      height: 600px;
       border: none;
+      margin-top: 20px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
     }
 
     p {
@@ -68,28 +72,28 @@
   <p>Zhang and Courty used per capita museum subsidy and expenditure against per capita GDP in their study. However, given the great disparity in population distribution (the latest demographic census in 2020 shows eastern provinces’ population accounts for almost 40%, rising 2.5% compared to 2010’s census), the actual subsidies received by museums in eastern provinces should be far beyond those received by middle and western provinces, disproportional to the numbers and sizes of museums. A large museum in a densely populated area may receive more absolute funding than multiple smaller museums in sparsely populated areas, even if per capita figures suggest “equal” investment. For instance, here I list the statistics of Inner Mongolia (western province) and Guangdong (eastern province) in 2020. We can seen although the subsidy per capita of Inner Mongolia exceeds that of Guangdong, the subsidy per square meter of Guangdong is twice that of Inner Mongolia.</p>
   
   <h3>Guangdong vs. Inner Mongolia: A Case Comparison</h3>
-  <img src="Comparison between Guangdong and Inner Mongolia.png" alt="Guangdong vs. Inner Mongolia" width="700" />
+  <img src="Comparison between Guangdong and Inner Mongolia.png" alt="Guangdong vs. Inner Mongolia" />
 
   <h2>Provincial Comparisons</h2>
-  <img src="Log GDP per capita by Province and Year (Sorted by Average Log GDP per capita).png" width="700" />
-  <img src="Log Subsidy per sqm by Province and Year (Sorted by Average Log Subsidy).png" width="700" />
-  <img src="Log Museum Expenditure by Province and Year (Sorted by Average Log Expenditure).png" width="700" />
+  <img src="Log GDP per capita by Province and Year (Sorted by Average Log GDP per capita).png" />
+  <img src="Log Subsidy per sqm by Province and Year (Sorted by Average Log Subsidy).png" />
+  <img src="Log Museum Expenditure by Province and Year (Sorted by Average Log Expenditure).png" />
 
   <h2>Regional Patterns</h2>
   <p>In reports made by MCT, Eastern region includes Beijing, Tianjin, Liaoning Province, Shanghai, Jiangsu Province, Zhejiang Province, Fujian Province, Shandong Province, and Guangdong Province; Central region includes Hebei Province, Shanxi Province, Jilin Province, Heilongjiang Province, Anhui Province, Jiangxi Province, Henan Province, Hubei Province, Hunan Province and Hainan Province; Western region includes Inner Mongolia (autonomous region), Guangxi Province, Chongqing, Sichuan Province, Guizhou Province, Yunan Province, Tibet (autonomous region), Shannxi Province, Gansu Province, Qinghai Province, Ningxia (autonomous region), and Xinjiang (autonomous region). </p>
 
-  <img src="Average GDP per capita by Region and Year.png" width="700" />
-  <img src="Average Subsidy per sqm by Region and Year.png" width="700" />
-  <img src="Average Museum Expenditure by Region and Year.png" width="700" />
+  <img src="Average GDP per capita by Region and Year.png" />
+  <img src="Average Subsidy per sqm by Region and Year.png" />
+  <img src="Average Museum Expenditure by Region and Year.png" />
 
   <h2>Correlation Analysis</h2>
-  <img src="Log Capita vs. Log Expenditure by Year and Region.png" width="700" />
-  <img src="Log GDP vs. Log Subsidy by Year and Region.png" width="700" />
-  <img src="Log Subsidy vs. Log Expenditure by Year and Region.png" width="700" />
+  <img src="Log Capita vs. Log Expenditure by Year and Region.png" />
+  <img src="Log GDP vs. Log Subsidy by Year and Region.png" />
+  <img src="Log Subsidy vs. Log Expenditure by Year and Region.png" />
 
   <h2>Key Finding</h2>
   <p>Despite intuitive expectations and heatmap results, these variables show no strong or statistically significant correlation via both Pearson Correlation and Spearman’s Rank Correlation. It might due to the relationship between museum sizes and GDP per capita. Our model verifies this strong correlation.</p>
-  <img src="Log GDP per capita vs. Log Museum Size.png" width="700" />
+  <img src="Log GDP per capita vs. Log Museum Size.png" />
 
   <p>These findings suggest that while investment in cultural infrastructure is widespread, it may not be directly linked to local economic development, raising new questions about policy priorities and evaluation metrics.</p>
   
@@ -111,5 +115,7 @@
 <p>“The Mad about Museum.” The Economist, August 14, 2018. https://www.economist.com/special-report/2018/08/14/mad-about-museums.</p>
 <p>National Cultural Heritage Administration (中华人民共和国国家文物局). “博物馆热.” Accessed June 3, 2009. http://www.ncha.gov.cn/art/2009/6/3/art_722_112135.html.</p>
 <p>National Bureau of Statistics of China (国家统计局). “第七次全国人口普查主要数据.” Published February 6, 2023. https://www.stats.gov.cn/sj/tjgb/rkpcgb/qgrkpcgb/202302/t20230206_1902003.html.</p>
+
+<p>This page is maintained by Yifang Xia. Last updated: May 2025.
 </body>
 </html>
