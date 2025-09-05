@@ -23,6 +23,12 @@
       border-radius: 8px;
     }
 
+    .text-width {
+      max-width: 100%;
+      width: calc(100% - 48px); /* 24px padding * 2 */
+      margin: 0 auto;
+    }
+
     p {
       margin-bottom: 1.2em;    /* Adds vertical space between paragraphs */
     }
@@ -57,12 +63,14 @@
   </style>
 </head>
 <body>
-  <figure>
-  <img src="China-museum.png" alt="China-museum" />
-  <figcaption style="font-size:0.9em; color:#888;">
-    A moment of wonder at the museum. Photo taken by my friend Jingyuan Liu, with gratitude.
-  </figcaption>
-</figure>
+  <div class="text-width">
+    <figure>
+      <img src="China-museum.png" alt="China-museum" />
+      <figcaption style="font-size:0.9em; color:#888;">
+        A moment of wonder at the museum. Photo taken by my friend Jingyuan Liu, with gratitude.
+      </figcaption>
+    </figure>
+  </div>
 <h1>Paths to the Museum</h1>
   <h1>China Museum Investment Analysis (2016–2022)</h1>
   <p><strong>Author:</strong> Yifang Xia</p>
