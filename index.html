@@ -23,12 +23,6 @@
       border-radius: 8px;
     }
 
-    .text-width {
-      max-width: 100%;
-      width: calc(100% - 48px); /* 24px padding * 2 */
-      margin: 0 auto;
-    }
-
     p {
       margin-bottom: 1.2em;    /* Adds vertical space between paragraphs */
     }
@@ -48,6 +42,20 @@
       border: 1px solid #ccc;
       border-radius: 8px;
     }
+    
+    img.full-text-width {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      box-sizing: border-box;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
 
     blockquote {
       border-left: 4px solid #ccc;
@@ -63,16 +71,14 @@
   </style>
 </head>
 <body>
-  <div class="text-width">
-    <figure>
-      <img src="China-museum.png" alt="China-museum" />
-      <figcaption style="font-size:0.9em; color:#888;">
-        A moment of wonder at the museum. Photo taken by my friend Jingyuan Liu, with gratitude.
-      </figcaption>
-    </figure>
-  </div>
-<h1>Paths to the Museum</h1>
+  <figure>
+    <img src="China-museum.png" class="full-text-width">
+    <figcaption style="font-size: 0.95rem; color: #555; text-align: center; margin-top: 8px;">
+      A moment of wonder at the museum. Photo taken by my friend Jingyuan Liu, with gratitude.
+    </figcaption>
+  </figure>
   <h1>China Museum Investment Analysis (2016–2022)</h1>
+  
   <p><strong>Author:</strong> Yifang Xia</p>
   <iframe
     src="https://Ifena.pythonanywhere.com"
@@ -81,7 +87,9 @@
     style="border:none;"
   >
   </iframe>
+  
   <h2>Background Information</h2>
+  
   <p>China has been actively protecting and promoting its intangible cultural heritage since 2005. Several scholars suggest that this intangible heritage “boom” is triggered by the successful registration of the Dano festival onto the UNESCO intangible heritage list by South Korea in the same year. China’s heritage projects are believed to enhance its cultural soft power in the global arena while contributing to domestic nation-building efforts. Besides the efforts in UNESCO heritage list registration, China also spares no efforts to build museums. 2007 witnessed a conspicuous growth in the count, size, and expenditure of museums, accompanied by significant increase in subsidies. This museum boom was observed and reported as early as 2018. As a crucial platform for the manifestation of cultural objects and public education, museums constitute part of politics of identity. Despite museums’ status identified by Chinese legislation as “a basis for patriotic education” through the commemoration and celebration of Chinese history, museum boom receives much less attention than heritage boom.</p>
 
   <p>Since museum building and maintaining would enormously consume time, money, and human resources, it is unsurprising that wealthier provinces will witness more rapid growth in the number of museums and larger amount of subsidies. However, Fenghua Zhang and Pascal Courty’s research shows that despite economic disparities, museum growth in the time span between 1996 and 2015 was relatively balanced across regions, suggesting deliberate government efforts to improve accessibility and cultural equity. The goal of this study is to verify whether this conclusion is still valid after 2016.</p>
@@ -93,11 +101,13 @@
   <img src="Comparison between Guangdong and Inner Mongolia.png" alt="Guangdong vs. Inner Mongolia" />
 
   <h2>Provincial Comparisons</h2>
+  
   <img src="Log GDP per capita by Province and Year (Sorted by Average Log GDP per capita).png" />
   <img src="Log Subsidy per sqm by Province and Year (Sorted by Average Log Subsidy).png" />
   <img src="Log Museum Expenditure by Province and Year (Sorted by Average Log Expenditure).png" />
 
   <h2>Regional Patterns</h2>
+  
   <p>In reports made by MCT, Eastern region includes Beijing, Tianjin, Liaoning Province, Shanghai, Jiangsu Province, Zhejiang Province, Fujian Province, Shandong Province, and Guangdong Province; Central region includes Hebei Province, Shanxi Province, Jilin Province, Heilongjiang Province, Anhui Province, Jiangxi Province, Henan Province, Hubei Province, Hunan Province and Hainan Province; Western region includes Inner Mongolia (autonomous region), Guangxi Province, Chongqing, Sichuan Province, Guizhou Province, Yunan Province, Tibet (autonomous region), Shannxi Province, Gansu Province, Qinghai Province, Ningxia (autonomous region), and Xinjiang (autonomous region). </p>
 
   <img src="Average GDP per capita by Region and Year.png" />
@@ -105,16 +115,19 @@
   <img src="Average Museum Expenditure by Region and Year.png" />
 
   <h2>Correlation Analysis</h2>
+  
   <img src="Log Capita vs. Log Expenditure by Year and Region.png" />
   <img src="Log GDP vs. Log Subsidy by Year and Region.png" />
   <img src="Log Subsidy vs. Log Expenditure by Year and Region.png" />
 
   <h2>Key Finding</h2>
+  
   <p>Despite intuitive expectations and heatmap results, these variables show no strong or statistically significant correlation via both Pearson Correlation and Spearman’s Rank Correlation. It might due to the relationship between museum sizes and GDP per capita. Our model verifies this strong correlation.</p>
   <img src="Log GDP per capita vs. Log Museum Size.png" />
 
   <p>These findings suggest that while investment in cultural infrastructure is widespread, it may not be directly linked to local economic development, raising new questions about policy priorities and evaluation metrics.</p>
   
 <h2>References</h2>
+  
 <p>You can download the full list of references here:</p>
 <p><a href="References.pdf" target="_blank">Download References (PDF)</a></p>
