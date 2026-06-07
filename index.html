@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>China Museum Investment Analysis – Yifang Xia</title>
+  <title>China Museum Investment Analysis · Yifang Xia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet" />
@@ -18,7 +18,7 @@
       --slate-pale:   #eaf0f5;
       --slate-rule:   #aec3d4;
 
-      /* Neutrals — warm side to stay consistent with site 1 */
+      /* Neutrals, warm side to stay consistent with site 1 */
       --ink:          #1a1d20;
       --ink-mid:      #333c44;
       --ink-muted:    #5c6a75;
@@ -286,6 +286,55 @@
     }
     .finding-box p { margin-bottom: 0; font-size: 0.95rem; }
 
+    /* ── Data table ── */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.75rem 0;
+      font-size: 0.9rem;
+      font-family: var(--font-body);
+    }
+    .data-table caption {
+      caption-side: top;
+      text-align: left;
+      font-size: 0.8rem;
+      color: var(--caption);
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    .data-table th, .data-table td {
+      padding: 0.55rem 0.85rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table thead th {
+      color: var(--slate);
+      font-weight: 600;
+      border-bottom: 2px solid var(--slate-rule);
+    }
+    .data-table td.num, .data-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .data-table tbody tr:last-child td { border-bottom: 1px solid var(--slate-rule); }
+
+    /* ── Method / caveat note ── */
+    .note-box {
+      background: var(--surface);
+      border-left: 3px solid var(--slate-light);
+      padding: 1rem 1.25rem;
+      margin: 1.75rem 0;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+    .note-box strong { color: var(--slate); }
+
+    /* ── Verdict line above a figure ── */
+    .verdict {
+      font-family: var(--font-head);
+      font-weight: 600;
+      color: var(--slate);
+      font-size: 1.05rem;
+      margin: 0 0 0.4rem;
+    }
+
     /* ── Links ── */
     a { color: var(--slate-mid); }
     a:hover { color: var(--slate); }
@@ -331,8 +380,8 @@
 <!-- ── Site header ── -->
 <header class="site-header" role="banner">
   <div class="site-header-inner">
-    <p class="meta-line">Research Essay &nbsp;·&nbsp; Cultural Policy &nbsp;·&nbsp; China &nbsp;·&nbsp; 2016–2022</p>
-    <h1>China Museum Investment Analysis (2016–2022)</h1>
+    <p class="meta-line">Research Essay &nbsp;·&nbsp; Cultural Policy &nbsp;·&nbsp; China &nbsp;·&nbsp; 2016 to 2022</p>
+    <h1>China Museum Investment Analysis (2016 to 2022)</h1>
     <p class="byline">Yifang Xia</p>
   </div>
 </header>
@@ -343,10 +392,8 @@
   <ol>
     <li><a href="#background">Background</a></li>
     <li><a href="#data-method">Data and Method</a></li>
-    <li><a href="#provincial">Provincial Comparisons</a></li>
     <li><a href="#regional">Regional Patterns</a></li>
-    <li><a href="#correlation">Correlation Analysis</a></li>
-    <li><a href="#finding">Key Finding</a></li>
+    <li><a href="#finding">Correlation and the Key Finding</a></li>
     <li><a href="#references">References</a></li>
   </ol>
 </nav>
@@ -372,124 +419,124 @@
   <section id="background">
     <h2>1. Background</h2>
 
-    <p>China has been actively protecting and promoting its intangible cultural heritage since 2005. Several scholars suggest that this intangible heritage "boom" was triggered by the successful registration of the Dano festival onto the UNESCO intangible heritage list by South Korea in the same year (Wu, 2020; Ke, 2022). China's heritage projects are believed to enhance its cultural soft power in the global arena while contributing to domestic nation-building efforts (Sen, 2010). Beyond UNESCO registration efforts, China has also invested heavily in museum construction: 2007 witnessed conspicuous growth in the count, size, and expenditure of museums, accompanied by significant increases in subsidies — a museum boom noted by scholars as early as 2018 (Zhang, 2021).</p>
+    <p>China has been actively protecting and promoting its intangible cultural heritage since 2005. Several scholars suggest that this intangible heritage "boom" was triggered by the successful registration of the Dano festival onto the UNESCO intangible heritage list by South Korea in the same year (Wu, 2020; Ke, 2022). China's heritage projects are believed to enhance its cultural soft power in the global arena while contributing to domestic nation-building efforts (Sen, 2010). Beyond UNESCO registration, China has invested heavily in museum construction. Museum count, size, and spending all jumped in 2007, and subsidies rose with them; scholars were calling it a boom by 2018 (Zhang, 2021).</p>
+
+    <p>The boom has not slowed. By the end of 2024 China had 7,046 registered museums, roughly one per 200,000 people, more than nine in ten free to enter, and they recorded about 1.49 billion visits that year (National Cultural Heritage Administration, 2024). The question this study asks is not whether the sector has grown, but whether the money has spread evenly.</p>
 
     <p>As a crucial platform for the manifestation of cultural objects and public education (Blunden, 2016), museums constitute part of a politics of identity. Despite their legal designation in Chinese legislation as "a basis for patriotic education" (Bollo &amp; Zhang, 2017), museum expansion has received far less scholarly attention than heritage tourism more broadly.</p>
 
-    <p>Since building and maintaining museums consumes substantial time, money, and human resources, it is unsurprising that wealthier provinces would see more rapid growth and larger subsidies. However, Fenghua Zhang and Pascal Courty's research shows that despite economic disparities, museum growth between 1996 and 2015 was relatively balanced across regions, suggesting deliberate government efforts to improve accessibility and cultural equity (Zhang &amp; Courty, 2021). The goal of this study is to verify whether this conclusion holds for the period after 2016.</p>
+    <p>The intuitive expectation is that wealthier provinces invest more. Zhang and Courty (2021) found the opposite for 1996 to 2015: museum growth was relatively balanced across regions, which they read as a deliberate push for accessibility and cultural equity. This study asks whether that balance held after 2016.</p>
 
-    <p>Museum development in China has always been intertwined with political and economic forces. After the founding of the People's Republic of China, museum development became part of the Chinese Communist Party's governing policy — serving economic, ideological, and political needs (Lu, 2014). Although absolute regulation relaxed after the 1980s reforms, museums remain instruments of cultural policy, and local officials have at times treated museum construction as a visible marker of performance (Shan, 2009).</p>
+    <p>Museum development in China has always been intertwined with political and economic forces. After the founding of the People's Republic of China, museum development became part of the Chinese Communist Party's governing policy, serving economic, ideological, and political needs (Lu, 2014). Although absolute regulation relaxed after the 1980s reforms, museums remain instruments of cultural policy, and local officials have at times treated museum construction as a visible marker of performance (Shan, 2009).</p>
 
-    <p>Through examining the National Museum of China in Beijing and the Liaoning Provincial Museum in Shenyang, Gideon Shelach-Lavi argues that modern Chinese public museums embody an inclusive yet standardized narrative of Chinese history — one that establishes continuity between the past and the present (Shelach-Lavi, 2019). This resonates with broader observations about cultural nationalism: with the upsurge of nationalism and skepticism toward the Party since the 1990s, state intervention in cultural projects has intensified (Walton, 2012; Zhao, 2004). Patriotic themes — introduced partly as a replacement for Marxist ideology — have been linked to Confucian tradition to legitimize the Party's authority over cultural interpretation (Lin, 2023; Mufson, 1996).</p>
+    <p>Through examining the National Museum of China in Beijing and the Liaoning Provincial Museum in Shenyang, Gideon Shelach-Lavi argues that modern Chinese public museums embody an inclusive yet standardized narrative of Chinese history, one that establishes continuity between the past and the present (Shelach-Lavi, 2019). This resonates with broader observations about cultural nationalism: with the upsurge of nationalism and skepticism toward the Party since the 1990s, state intervention in cultural projects has intensified (Walton, 2012; Zhao, 2004). Patriotic themes, introduced partly as a replacement for Marxist ideology, have been linked to Confucian tradition to legitimize the Party's authority over cultural interpretation (Lin, 2023; Mufson, 1996).</p>
   </section>
 
   <!-- 2 Data -->
   <section id="data-method">
     <h2>2. Data and Method</h2>
 
-    <p>Data come from the Statistical Yearbook of Cultural Relics of China (SYCRC) and statistical reports published by the Ministry of Culture and Tourism (MCT). The Yearbook provides provincial museum counts, while MCT reports supply information on tourist reception, expenditure, subsidy, and related metrics. This study focuses on three variables: GDP per capita, total museum subsidy, and total museum expenditure — disaggregated by Eastern, Central, and Western regions.</p>
+    <p>Data come from the Statistical Yearbook of Cultural Relics of China (SYCRC) and statistical reports published by the Ministry of Culture and Tourism (MCT). The Yearbook provides provincial museum counts, while MCT reports supply information on tourist reception, expenditure, subsidy, and related metrics. This study focuses on three variables: GDP per capita, total museum subsidy, and total museum expenditure, disaggregated by Eastern, Central, and Western regions.</p>
 
-    <p><em>Subsidy</em> refers to direct financial support from the government to museums, ensuring operational sustainability and tied to policy changes. Zhang and Courty demonstrate that rising museum attendance in China is largely explained by policies stimulating infrastructure development and reducing admission fees — meaning demand is driven more by government investment than by public cultural demand per se (Zhang &amp; Courty, 2022).</p>
+    <p><em>Subsidy</em> refers to direct financial support from the government to museums, ensuring operational sustainability and tied to policy changes. Zhang and Courty demonstrate that rising museum attendance in China is largely explained by policies stimulating infrastructure development and reducing admission fees, which means demand is driven more by government investment than by public cultural demand per se (Zhang &amp; Courty, 2022).</p>
 
-    <p><em>Expenditure</em> represents total operational spending, excluding infrastructure costs — covering staff salaries, exhibitions, educational activities, and professional training. Following Frey and Meier (2006), expenditure serves as a proxy for museum quality and overall service investment.</p>
+    <p><em>Expenditure</em> represents total operational spending, excluding infrastructure costs: staff salaries, exhibitions, educational activities, and professional training. Following Frey and Meier (2006), expenditure serves as a proxy for museum quality and overall service investment.</p>
 
-    <p>Zhang and Courty used per capita museum subsidy and expenditure against per capita GDP. However, given the considerable disparity in population distribution — the 2020 census shows Eastern provinces account for nearly 40% of the national population, up 2.5% from 2010 — absolute subsidies in Eastern provinces would far exceed those in Central and Western ones, disproportionate to the actual number and scale of museums present. A large museum in a densely populated area may receive more absolute funding than multiple smaller museums in sparsely populated regions, even if per capita figures suggest equal investment.</p>
+    <p>Zhang and Courty used per capita museum subsidy and expenditure against per capita GDP. However, given the considerable disparity in population distribution (the 2020 census shows Eastern provinces account for nearly 40% of the national population, up 2.5% from 2010), absolute subsidies in Eastern provinces would far exceed those in Central and Western ones, disproportionate to the actual number and scale of museums present. A large museum in a densely populated area may receive more absolute funding than multiple smaller museums in sparsely populated regions, even if per capita figures suggest equal investment.</p>
 
     <h3>Guangdong vs. Inner Mongolia: A Case Comparison</h3>
 
     <p>The table below illustrates this discrepancy. Although Inner Mongolia's subsidy per capita exceeds Guangdong's in 2020, the subsidy per square meter of museum floor space in Guangdong is roughly twice that of Inner Mongolia.</p>
 
-    <figure>
-      <img src="Comparison between Guangdong and Inner Mongolia.png" alt="Table comparing museum subsidy per capita and per square meter between Guangdong (Eastern) and Inner Mongolia (Western) in 2020, showing that per-square-meter investment in Guangdong is approximately twice that of Inner Mongolia" />
-      <figcaption>Guangdong vs. Inner Mongolia (2020). Per capita subsidy favors Inner Mongolia; per square meter subsidy tells the opposite story.</figcaption>
-    </figure>
+    <table class="data-table">
+      <caption>Guangdong (East) versus Inner Mongolia (West), 2020. Subsidy per capita favours Inner Mongolia; subsidy per square meter tells the opposite story.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Province</th>
+          <th scope="col" class="num">Population</th>
+          <th scope="col" class="num">Museum size (10<sup>6</sup> m&sup2;)</th>
+          <th scope="col" class="num">Subsidy (10<sup>6</sup> RMB)</th>
+          <th scope="col" class="num">Subsidy per capita</th>
+          <th scope="col" class="num">Subsidy per m&sup2;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Inner Mongolia</td>
+          <td class="num">24,049,155</td>
+          <td class="num">105.91</td>
+          <td class="num">536.84</td>
+          <td class="num">22.32</td>
+          <td class="num">5.07</td>
+        </tr>
+        <tr>
+          <td>Guangdong</td>
+          <td class="num">126,012,510</td>
+          <td class="num">169.47</td>
+          <td class="num">1,831.04</td>
+          <td class="num">14.53</td>
+          <td class="num">10.80</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Guangdong holds more than five times Inner Mongolia's population and so reports a lower subsidy per head, yet it puts more than twice as much money into each square meter of museum. Per capita figures, in other words, can flip the ranking that funding intensity actually shows.</p>
 
     <p>This study therefore uses subsidy and expenditure per square meter of museum floor space as the primary investment metrics. This approach controls for differences in museum size and distribution, offering a clearer picture of funding intensity and equity.</p>
+
+    <div class="note-box"><strong>Which test backs which claim.</strong> The correlations reported below are Pearson coefficients pooled across all 217 province-years, on the per-square-meter metrics. Two choices matter, because the result moves with them. First, per square meter rather than total: total spending tracks wealth mechanically, since richer provinces simply have more museum floor space. Second, pooled rather than year by year: with only 31 provinces in a single year, even a real association of this size fails to reach significance, so the pooled estimate is the one the claims rest on. Both are stated here so the reader can see exactly what is and is not being asserted.</div>
   </section>
 
-  <!-- 3 Provincial -->
-  <section id="provincial">
-    <h2>3. Provincial Comparisons</h2>
-
-    <p>The charts below present log-transformed values of GDP per capita, subsidy per square meter, and museum expenditure across provinces, sorted by their average log values over the study period. Log transformation reduces the effect of extreme outliers and makes cross-provincial comparisons more legible.</p>
-
-    <div class="chart-series">
-      <figure>
-        <img src="Log GDP per capita by Province and Year (Sorted by Average Log GDP per capita).png" alt="Heatmap of log GDP per capita by province and year, sorted by average, showing Shanghai, Beijing, and Tianjin consistently at the top and Gansu, Tibet, and Guizhou at the bottom" />
-        <figcaption>Figure 1. Log GDP per capita by province and year, sorted by average. Eastern coastal provinces dominate the upper range.</figcaption>
-      </figure>
-      <figure>
-        <img src="Log Subsidy per sqm by Province and Year (Sorted by Average Log Subsidy).png" alt="Heatmap of log museum subsidy per square meter by province and year, sorted by average" />
-        <figcaption>Figure 2. Log museum subsidy per square meter by province and year, sorted by average.</figcaption>
-      </figure>
-      <figure>
-        <img src="Log Museum Expenditure by Province and Year (Sorted by Average Log Expenditure).png" alt="Heatmap of log museum expenditure by province and year, sorted by average" />
-        <figcaption>Figure 3. Log museum expenditure by province and year, sorted by average.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- 4 Regional -->
+  <!-- 3 Regional -->
   <section id="regional">
-    <h2>4. Regional Patterns</h2>
+    <h2>3. Regional Patterns</h2>
 
     <p>MCT reports divide China into three regions. The Eastern region includes Beijing, Tianjin, Liaoning, Shanghai, Jiangsu, Zhejiang, Fujian, Shandong, and Guangdong. The Central region includes Hebei, Shanxi, Jilin, Heilongjiang, Anhui, Jiangxi, Henan, Hubei, Hunan, and Hainan. The Western region includes Inner Mongolia, Guangxi, Chongqing, Sichuan, Guizhou, Yunnan, Tibet, Shaanxi, Gansu, Qinghai, Ningxia, and Xinjiang.</p>
 
-    <div class="chart-series">
-      <figure>
-        <img src="Average GDP per capita by Region and Year.png" alt="Line chart showing average GDP per capita over time for Eastern, Central, and Western regions, with Eastern consistently highest" />
-        <figcaption>Figure 4. Average GDP per capita by region and year. The East-West economic gap persists across the study period.</figcaption>
-      </figure>
-      <figure>
-        <img src="Average Subsidy per sqm by Region and Year.png" alt="Line chart showing average museum subsidy per square meter by region and year" />
-        <figcaption>Figure 5. Average museum subsidy per square meter by region and year.</figcaption>
-      </figure>
-      <figure>
-        <img src="Average Museum Expenditure by Region and Year.png" alt="Line chart showing average museum expenditure by region and year" />
-        <figcaption>Figure 6. Average museum expenditure by region and year.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- 5 Correlation -->
-  <section id="correlation">
-    <h2>5. Correlation Analysis</h2>
-
-    <div class="chart-series">
-      <figure>
-        <img src="Log Capita vs. Log Expenditure by Year and Region.png" alt="Scatter plot of log GDP per capita against log museum expenditure, with points colored by region and faceted by year" />
-        <figcaption>Figure 7. Log GDP per capita vs. log museum expenditure by year and region.</figcaption>
-      </figure>
-      <figure>
-        <img src="Log GDP vs. Log Subsidy by Year and Region.png" alt="Scatter plot of log GDP per capita against log museum subsidy per square meter, with points colored by region and faceted by year" />
-        <figcaption>Figure 8. Log GDP per capita vs. log museum subsidy per square meter by year and region.</figcaption>
-      </figure>
-      <figure>
-        <img src="Log Subsidy vs. Log Expenditure by Year and Region.png" alt="Scatter plot of log museum subsidy per square meter against log museum expenditure by year and region" />
-        <figcaption>Figure 9. Log museum subsidy vs. log museum expenditure by year and region.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- 6 Finding -->
-  <section id="finding">
-    <h2>6. Key Finding</h2>
-
-    <p>Despite intuitive expectations and apparent heatmap patterns, GDP per capita, subsidy per square meter, and museum expenditure show no strong or statistically significant correlation via either Pearson or Spearman's Rank Correlation. One likely mediating factor is museum size relative to GDP per capita — a relationship the data confirm strongly:</p>
+    <p>Three series, read side by side, set up the whole question. The East stays far ahead on wealth across the study period. Yet its lead all but vanishes once the eye moves to subsidy per square meter, and only partly returns for operating expenditure. The wealth ranking and the funding ranking are not the same ranking.</p>
 
     <figure>
-      <img src="Log GDP per capita vs. Log Museum Size.png" alt="Scatter plot showing a strong positive correlation between log GDP per capita and log museum size across provinces, suggesting that wealthier provinces build larger museums rather than more numerous ones" />
-      <figcaption>Figure 10. Log GDP per capita vs. log museum size. Wealthier provinces tend to build larger museums, which in turn affects how absolute subsidy and expenditure figures should be interpreted.</figcaption>
+      <img src="china_museum_figR_regional.png" alt="Three small-multiple line charts for Eastern, Central, and Western regions from 2016 to 2022. GDP per capita: the East leads by a wide margin. Subsidy per square meter: the three regions sit close together. Expenditure per square meter: the East leads only modestly." />
+      <figcaption>Figure 1. Regional averages, 2016 to 2022. The East dominates GDP per capita, but the gap narrows sharply for subsidy per square meter and only partly reopens for operating expenditure.</figcaption>
+    </figure>
+  </section>
+
+  <!-- 4 Correlation and Key Finding -->
+  <section id="finding">
+    <h2>4. Correlation and the Key Finding</h2>
+
+    <p>Pooling all 217 province-years and correlating each funding measure with GDP per capita turns that visual impression into numbers. The result is a gradient, not a single verdict.</p>
+
+    <table class="data-table">
+      <caption>Pearson correlation with GDP per capita, pooled across 217 province-years.</caption>
+      <thead>
+        <tr><th scope="col">Relationship</th><th scope="col" class="num">Pearson r</th><th scope="col" class="num">p</th><th scope="col">Reading</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Subsidy per m&sup2;</td><td class="num">+0.11</td><td class="num">0.12</td><td>not significant</td></tr>
+        <tr><td>Expenditure per m&sup2;</td><td class="num">+0.21</td><td class="num">0.002</td><td>weakly aligned</td></tr>
+        <tr><td>Museum size</td><td class="num">+0.39</td><td class="num">&lt;0.001</td><td>strongly aligned</td></tr>
+      </tbody>
+    </table>
+
+    <p>Subsidy intensity per square meter shows no significant association with provincial wealth. Operating expenditure per square meter is weakly aligned. Museum size is strongly aligned. Plotting the weakest and the strongest of these side by side states the thesis in one view.</p>
+
+    <p class="verdict">Money for buildings, not for running them.</p>
+    <figure style="margin-top:0.4rem;">
+      <img src="china_museum_figK_keyfinding.png" alt="Two scatter plots side by side. Left: GDP per capita against subsidy per square meter, points scattered around a nearly flat fit line, labeled r = 0.11, not significant. Right: GDP per capita against museum size, points rising along a clear upward fit line, labeled r = 0.39." />
+      <figcaption>Figure 2. The contrast that carries the argument. Wealth barely predicts how intensively a province funds each square meter of museum (left), but strongly predicts how much museum it builds (right).</figcaption>
     </figure>
 
     <div class="finding-box">
-      <p>These findings suggest that while investment in cultural infrastructure is widespread across regions, it is not directly proportional to local economic development. Government policy appears to decouple subsidy distribution from provincial GDP — raising new questions about the evaluation metrics used to assess cultural equity in China's museum sector.</p>
+      <p>The picture is a gradient. Subsidy intensity per square meter is not aligned with provincial wealth, operating expenditure is weakly aligned, and museum size is strongly aligned. In plain terms, provinces get money for buildings, not for running them.</p>
+      <p>A flat subsidy gradient need not mean any province chose to decouple funding from wealth. Central fiscal transfers to poorer western and minority regions would flatten the same gradient with no province deciding anything, and museum size, which does track wealth, sits behind the absolute figures as a confounder. The defensible claim is the association; the mechanism stays a candidate until a budget source pins it down.</p>
+      <p>Read against Zhang and Courty (2021), this both confirms and complicates them. Their equity-oriented reading holds for operating support, where the regions sit close together. It does not hold for the physical stock, since wealthier provinces still build larger museums, so the balance is in running costs rather than in bricks. The lesson for measurement is that per capita yardsticks, the usual tool, can mistake a big building for a well-funded one.</p>
     </div>
   </section>
 
   <!-- 7 References -->
   <section id="references">
-    <h2>7. References</h2>
+    <h2>5. References</h2>
     <p>The full bibliography is available for download below.</p>
     <a class="references-link" href="References.pdf" target="_blank" rel="noopener">Download full references (PDF) ↓</a>
   </section>
